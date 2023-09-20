@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans, AgglomerativeClustering
 
 # Load your NBA data here
-df = pd.read_excel('https://github.com/A-Jyad/NBAPlayerClustering/raw/master/Data/NBA_Data.xlsx')
+df = pd.read_csv('https://raw.githubusercontent.com/aaubs/ds-master/main/data/NBA_Data.csv')
 
 # Preprocess and standardize the data
 scaler = StandardScaler()
