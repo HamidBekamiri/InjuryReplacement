@@ -16,8 +16,8 @@ kmeans = KMeans(n_clusters=4).fit(scaled_data)
 agg_clustering = AgglomerativeClustering(n_clusters=4).fit(scaled_data)
 
 # Add cluster labels to the original DataFrame
-# df['KMeans_Cluster'] = kmeans.labels_
-# df['Agg_Cluster'] = agg_clustering.labels_
+df['KMeans_Cluster'] = kmeans.labels_
+df['Agg_Cluster'] = agg_clustering.labels_
 
 # Streamlit app
 st.title("NBA Player Injury Replacement Recommender")
